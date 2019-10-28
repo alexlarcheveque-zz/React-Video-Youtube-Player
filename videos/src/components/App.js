@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import youtube from "../api/youtube";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
+import Comment from "./Comment";
 
 class App extends React.Component {
   state = { videos: [], selectedVideo: null };
@@ -19,7 +20,6 @@ class App extends React.Component {
       videos: response.data.items,
       selectedVideo: response.data.items[0]
     });
-    console.log(this.state.videos);
   };
 
   onVideoSelect = video => {
