@@ -9,8 +9,7 @@ class SearchBar extends React.Component {
 
   onFormSubmit = event => {
     event.preventDefault();
-
-    //TODO: Once user submits, get an API call to deploy search request
+    this.props.onFormSubmit(this.state.searchInput);
   };
 
   render() {
