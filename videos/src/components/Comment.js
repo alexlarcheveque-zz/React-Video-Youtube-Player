@@ -6,10 +6,10 @@ const Comment = props => {
     <div className="ui minimal comments">
       <div className="comment">
         <a className="avatar">
-          <img src={faker.image.avatar()}></img>
+          <img alt="avatar" src={faker.image.avatar()}></img>
         </a>
         <div className="content">
-          <a class="author">
+          <a className="author">
             {faker.name.firstName()} {faker.name.lastName()}
           </a>
           <div className="text"> {props.content}</div>
